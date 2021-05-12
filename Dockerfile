@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y \
     unzip \
   && rm -rf /var/lib/apt/lists/*
 
-RUN wget --quiet https://releases.hashicorp.com/terraform/0.14.6/terraform_0.14.6_linux_amd64.zip \
-  && unzip terraform_0.14.6_linux_amd64.zip \
+RUN wget --quiet https://releases.hashicorp.com/terraform/0.15.3/terraform_0.15.3_linux_amd64.zip \
+  && unzip terraform_0.15.3_linux_amd64.zip \
   && mv terraform /usr/bin \
-  && rm terraform_0.14.6_linux_amd64.zip
+  && rm terraform_0.15.3_linux_amd64.zip
